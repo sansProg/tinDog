@@ -1,0 +1,171 @@
+#title {
+  background-color: #ff4c68;
+  color: white;
+}
+h1,
+h2 {
+  /*multiple selectors*/
+  font-family: "Montserrat";
+}
+h1 {
+  font-size: 3.5em;
+  line-height: 1.5;
+  font-weight: 900;
+}
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+
+body {
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+.navbar-brand {
+  font-family: Ubuntu;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.navbar {
+  padding-bottom: 4.5rem;
+}
+.nav-item {
+  padding: 0 18px;
+}
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+.nav-link:hover {
+  font-weight: 600;
+}
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+.title-image {
+  width: 21%;
+  transform: rotate(25deg); /*this rotates the image by +25 degrees*/
+
+  /* z index determines the stacking order on z axis or towards the user. by default its set on 0 and for z index to work, item should be positioned either relative or absolute */
+  position: absolute;
+  right: 22%;
+  z-index: 0;
+}
+
+#features {
+  padding: 7% 15%;
+  /* to cut the title image from below a little bit, we can stack features section on top of it. and therefore we set bg color to white as by default its transparent and when it stacks on top of image , image's part that should be hidden would be visible */
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  /*for flowchart about stacking order and z index refer stacking order flowchart pdf in this folder*/
+}
+
+.feature-boxes {
+  text-align: center;
+  padding: 5%;
+}
+h3 {
+  font-family: "Montserrat";
+  font-weight: 800;
+}
+p {
+  color: #8f8f8f;
+}
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+.icon:hover {
+  color: #ff4c68;
+}
+
+#testimonials {
+  text-align: center;
+  background-color: #ef8172;
+  color: #fff;
+}
+h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.testimonial-img {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+#press {
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%;
+}
+.press-image {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+.carousel-item {
+  padding: 7% 15%;
+}
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+.pricing-column {
+  padding: 3% 2%;
+}
+#cta {
+  background-color: #ff4c68;
+  text-align: center;
+}
+
+.cta-msg {
+  color: #fff;
+  padding: 7% 15% 0;
+}
+
+.cta-btn {
+  margin-bottom: 10%;
+}
+
+.footer-icons {
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 2%;
+}
+#footer {
+  text-align: center;
+}
+
+#footer .footer-div {
+  /*heirchial selector. we read this from right to left as-- for all items with footer-div class inside its parent item having id footer, apply these ..*/
+  padding: 7% 15% 5%;
+}
+
+p {
+  font-family: "Montserrat";
+  color: #8f8f8f;
+}
+/* media query */
+@media (max-width: 1028px) {
+  /*for screen size smaller than equal to 1028 pixels, change the following in website*/
+
+  #title {
+    text-align: center;
+  }
+  .title-image {
+    position: static;
+    transform: rotate(0);
+    width: 60%;
+  }
+}
+
+/*as we have seen multiple, heirchial selectors, there is also a selector called combined selector --
+eg--
+h1#title {
+    color:red;
+}
+this an be read as all the h1s having id of title should have text color as red*/
+
+/*selector priority--  id>class>tag*/
