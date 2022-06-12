@@ -4,7 +4,7 @@
 }
 h1,
 h2 {
-  /*multiple selectors*/
+
   font-family: "Montserrat";
 }
 h1 {
@@ -45,9 +45,9 @@ body {
 
 .title-image {
   width: 21%;
-  transform: rotate(25deg); /*this rotates the image by +25 degrees*/
+  transform: rotate(25deg); 
 
-  /* z index determines the stacking order on z axis or towards the user. by default its set on 0 and for z index to work, item should be positioned either relative or absolute */
+ 
   position: absolute;
   right: 22%;
   z-index: 0;
@@ -55,11 +55,11 @@ body {
 
 #features {
   padding: 7% 15%;
-  /* to cut the title image from below a little bit, we can stack features section on top of it. and therefore we set bg color to white as by default its transparent and when it stacks on top of image , image's part that should be hidden would be visible */
+  
   background-color: #fff;
   position: relative;
   z-index: 1;
-  /*for flowchart about stacking order and z index refer stacking order flowchart pdf in this folder*/
+  
 }
 
 .feature-boxes {
@@ -139,7 +139,7 @@ h2 {
 }
 
 #footer .footer-div {
-  /*heirchial selector. we read this from right to left as-- for all items with footer-div class inside its parent item having id footer, apply these ..*/
+
   padding: 7% 15% 5%;
 }
 
@@ -149,7 +149,7 @@ p {
 }
 /* media query */
 @media (max-width: 1028px) {
-  /*for screen size smaller than equal to 1028 pixels, change the following in website*/
+  
 
   #title {
     text-align: center;
@@ -161,11 +161,3 @@ p {
   }
 }
 
-/*as we have seen multiple, heirchial selectors, there is also a selector called combined selector --
-eg--
-h1#title {
-    color:red;
-}
-this an be read as all the h1s having id of title should have text color as red*/
-
-/*selector priority--  id>class>tag*/
