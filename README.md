@@ -1,6 +1,5 @@
 # tinDog
 
-This is an ideal responsive website made with HTML, CSS, and BOOTSTRAP that advertises an ideal product "tindog" which is like tinder for dogs.
-This is an ideal website and therefore does not have any functionality.
+This is an ideal landing page for an ideal product "tindog" which is like tinder for dogs🐶.
 
 https://sansprog.github.io/tinDog/
